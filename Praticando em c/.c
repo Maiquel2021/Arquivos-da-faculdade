@@ -6,7 +6,7 @@ int main(){
     int i;
 
     printf("Informe o nome :\n");
-    scanf("s",nome);
+    scanf("%s",nome);
     for(i=1; i <= 10 ; i++){
         printf("\n %s ", nome);
     }
