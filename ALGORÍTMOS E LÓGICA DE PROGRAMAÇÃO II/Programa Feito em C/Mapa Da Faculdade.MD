@@ -25,7 +25,9 @@ O que deve conter no meu código?
 
 
 
+
 Resposta:
+
 
 #include<stdio.h>
 #include<string.h>
@@ -33,17 +35,21 @@ Resposta:
 #include<locale.h>
 #define MAX 200
 
+
+
 typedef struct Projetos
 {
+​     char Titulo_do_Projeto [50], Descricao [20],Gerente_de_Projetos [35];
+​     int Codigo , Ano ,status ;
 
-​    char Titulo_do_Projeto [50], Descricao [20],Gerente_de_Projetos [35];
-​    int Codigo , Ano ,status ;
 }pro;
+
+
+
 
 int contadoraProjetos = 0 ;	//Variavel Global
 int i = 0;	//Variavel Global
 int op;  //Variavel global .
-
 void cadastrarProjeto(pro cadastro[MAX]);
 void imprimindo(pro cadastro[MAX]);
 void imprimndo_todos(pro cadastro[MAX]);
@@ -53,7 +59,6 @@ void listaConcluido(pro cadastro[MAX]);
 void projetosAprovado();
 void projetosRejeitado();
 void Gerentedoprojeto();
-
 int Menu ();   
 
 
@@ -61,7 +66,8 @@ int Menu ();
 
 
 int main(){ 
-    setlocale(LC_ALL, "Portuguese");
+
+        setlocale(LC_ALL, "Portuguese");
 	pro cadastro[MAX]; //struct de Projetos.
 
 	system("cls");  // limpar a tela ..
@@ -126,6 +132,7 @@ int main(){
 	return (0);
  }
     
+    
 int Menu (){
 	    
 	    printf("\n\n");
@@ -143,7 +150,8 @@ int Menu (){
 	 
 	return (op); //retornando opcao para main principal.
 }     
-	     
+	
+	
 	 // função para Cadastrar Projetos.
 void cadastrarProjeto(pro cadastro[MAX]){
 
@@ -329,6 +337,7 @@ void projetosRejeitado(){
     	fflush(stdin);	
 
 }
+
         
 void Gerentedoprojeto(){
 	 float valor , lu ;//variavel local
