@@ -32,15 +32,17 @@ Resposta:
 #include<stdlib.h>
 #include<locale.h>
 #define MAX 200
-     
+
 typedef struct Projetos
 {
-    char Titulo_do_Projeto [50], Descricao [20],Gerente_de_Projetos [35];
-    int Codigo , Ano ,status ;
+
+​    char Titulo_do_Projeto [50], Descricao [20],Gerente_de_Projetos [35];
+​    int Codigo , Ano ,status ;
 }pro;
+
 int contadoraProjetos = 0 ;	//Variavel Global
 int i = 0;	//Variavel Global
-int op; //Variavel global .
+int op;  //Variavel global .
 
 void cadastrarProjeto(pro cadastro[MAX]);
 void imprimindo(pro cadastro[MAX]);
@@ -51,7 +53,11 @@ void listaConcluido(pro cadastro[MAX]);
 void projetosAprovado();
 void projetosRejeitado();
 void Gerentedoprojeto();
+
 int Menu ();   
+
+
+
 
 
 int main(){ 
@@ -139,12 +145,15 @@ int Menu (){
 }     
 	     
 	 // função para Cadastrar Projetos.
-void cadastrarProjeto(pro cadastro[MAX]){		 		 
-	system("cls");     
-        printf("\n_____________________________________________________________\n");
-        printf("\n ************ Bem Vindo A Cadastrar Projetos. ************  \n ");
-        printf("\n_____________________________________________________________\n");
-    	
+void cadastrarProjeto(pro cadastro[MAX]){
+
+
+​	    system("cls");     
+​        printf("\n_____________________________________________________________\n");
+​        printf("\n ************ Bem Vindo A Cadastrar Projetos. ************  \n ");
+​        printf("\n_____________________________________________________________\n");
+​    	
+
 	char resp = 's'; //variavel local
 	
 	while(resp == 's' && i <= MAX){
@@ -185,16 +194,21 @@ void cadastrarProjeto(pro cadastro[MAX]){
 		}       		   	    
 	}
 }
+
+
+
 void imprimindo(pro cadastro[MAX]){
 
 	printf("\n***********************\n");
 	printf("\n    Imprimindo....\n      ");
 	printf("\n***********************\n\n");    	
 }
-    
+
+
 void imprimndo_todos(pro cadastro[MAX]){
 	int linha=1;//variavel local
 	
+
 	if(i >= 1){
 		while(linha <= i){
 			printf("\nO codigo do Projeto:%d",cadastro[linha].Codigo); 
@@ -212,6 +226,8 @@ void imprimndo_todos(pro cadastro[MAX]){
 	system("Pause");
 }
 
+
+
 void listaAfazer(pro cadastro[MAX]){
 	int y;//variavel local
 	for(y = 0; y < MAX  ; y++) {
@@ -225,6 +241,8 @@ void listaAfazer(pro cadastro[MAX]){
 	   }	
     }	
 }
+
+
 
 void listaFazendo(pro cadastro[MAX]){
 	int y; //variavel local
@@ -240,6 +258,7 @@ void listaFazendo(pro cadastro[MAX]){
     }	
 }			
 	
+
 void listaConcluido(pro cadastro[MAX]){
 	int y;//variavel local
 	for(y = 0; y < MAX  ; y++) {
@@ -252,15 +271,18 @@ void listaConcluido(pro cadastro[MAX]){
 	   	    printf("\nO Gerente do projeto responsável:%s\n\0",cadastro[y].Gerente_de_Projetos);
 	   }	
     }	
-}								 
-     
+}				
+
+​				 
+​     
 void projetosAprovado(){
-	   int cod , An ; //variavel local
-	   char Tit , Descri ,Gerent ; //variavel local 
-       printf("\n O Codigo do projeto Aprovado: \0");
-        scanf("%d",&cod); 
-        fflush(stdin);
-        
+​	   int cod , An ; //variavel local
+​	   char Tit , Descri ,Gerent ; //variavel local 
+​       printf("\n O Codigo do projeto Aprovado: \0");
+​        scanf("%d",&cod); 
+​        fflush(stdin);
+​        
+
         printf("\n Qual Titulo  do projeto Aprovado: \0");
         scanf("%s",Tit);
         fflush(stdin);
