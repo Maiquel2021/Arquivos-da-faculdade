@@ -1,3 +1,4 @@
+
 Imagine que você visitou um cliente e fez o levantamento de requisitos necessários para o desenvolvimento de algumas telas de um sistema de reservas de veículos, porém o cliente gostaria de ter uma ideia de como ficará o software no final. Partindo desta necessidade, você optou pelo uso da prototipação. Agora, baseando-se nos requisitos listados crie as seguintes telas: Menu Inicial, Cadastro de Cliente, Cadastro de Marcas, Cadastro de Modelos, Cadastro de Usuários, Cadastro de Veículos e Reserva de Veículos.
 
 O cliente disse que as telas deverão ser feitas conforme sua criatividade, porém o *layout* deve ser voltado para o ambiente Web. Outra exigência é que as telas deverão conter obrigatoriamente os campos e botões solicitados por ele, onde:
